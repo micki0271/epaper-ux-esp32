@@ -11,7 +11,8 @@ Good Display has a model called [GDEW027W3-T](https://zh-tw.buyepaper.com/e-ink-
 
 ![DESPI-M02 Touch interface](https://user-images.githubusercontent.com/2692928/94328947-1f73c400-ffb7-11ea-8964-971785d02b74.jpeg)
 [SPI interface with touch specifications](http://www.e-paper-display.com/DESPI-V3.0%20Specification288f.pdf?method=picker&flag=all&id=16d1f900-f95a-4fe3-afc4-f0e67dc5301b&fileId=850&v=1.zip)
-Attention with this, the Touch interface that comes also with this epaper, does offer a switch to select GND to the epaper SPI, or to use the Touch but not both. So everyone has to decide what is the best to do, if hacking the PCB, or getting and independant connector for the touch device.
+
+**Atention with DESPI-C03 HAT**, it does offer a switch to select GND to the epaper SPI, or to use the Touch but not both. So everyone has to decide what is the best to do, if hacking the PCB, or getting and independant connector for the touch device. I will research in this issue further since I'm not queen of using more than one SPI/Touch adapter per epaper.
 
 ## How to test this
 
@@ -40,7 +41,12 @@ printTouchInfo callback
 X: 58, Y: 236, E: Tap
 
 ```
+This is just the beginning of this, will need some days to get something more consistant, and the first goal is to have this connected in the same PCB.
 
+1. goal: Make this easy to use, add the detailed instructions that our friends of Good Display didn't add (But they give support so my high five to them)
+2. Make a nice Arduino esp32 example combining touch and epaper SPI (GxEPD?)
+3. Bring LittleVGL into the picture
+4. Work out an ESP-IDF version
 
 ## Requirements (Already on libdeps)
 
