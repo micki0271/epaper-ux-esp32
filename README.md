@@ -1,6 +1,6 @@
 Epaper-UX-Esp32
 ===============
-This repository will be a explororing the possibilities to use touch panels on epaper to make UX using C++ and LittleVGL on ESP32.
+This repository will research the possibilities to use touch panels on epaper to make UX using C++ and LittleVGL on ESP32.
 
 
 FT6X36 is a library for self-capacitive touch panel controllers produced by FocalTech Systems (FT6236/FT6336/FT6436L/FT6436)
@@ -50,6 +50,7 @@ This is just the beginning, will need some days to get something more consistant
 
 ## Requirements (Already on libdeps)
 
+[Recommended connectors for touch and epaper spi](https://github.com/martinberlin/epaper-ux-esp32/issues/1)
 
 [FT6X36 Touch library](https://github.com/strange-v/FT6X36) Has been tested only on ESP32 using a 2.7" e-ink display (GDEW027W3-T)
 
